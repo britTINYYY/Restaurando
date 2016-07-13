@@ -70,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="912" y="248"/>
         </scene>
-        <!--View Controller-->
+        <!--Random Selector-->
         <scene sceneID="RIT-LQ-ZP9">
             <objects>
-                <viewController id="Vu6-Va-iFu" sceneMemberID="viewController">
+                <viewController id="Vu6-Va-iFu" customClass="RandomSelector" customModule="Restaurando" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7tb-fL-4ID"/>
                         <viewControllerLayoutGuide type="bottom" id="vS2-YG-2Vl"/>
@@ -82,15 +82,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ResultLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIy-fm-8Wc">
-                                <rect key="frame" x="253" y="238" width="94" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ResultLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIy-fm-8Wc">
+                                <rect key="frame" x="253" y="205" width="94" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="8Ml-tL-9fR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Today you are going to eat..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRv-tG-HbD">
+                                <rect key="frame" x="192" y="158" width="217" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yIy-fm-8Wc" firstAttribute="top" secondItem="7tb-fL-4ID" secondAttribute="bottom" constant="185" id="0ds-7C-1ZP"/>
+                            <constraint firstItem="yIy-fm-8Wc" firstAttribute="centerX" secondItem="sCT-Ov-Nyz" secondAttribute="centerX" id="242-tQ-Y0p"/>
+                            <constraint firstItem="vS2-YG-2Vl" firstAttribute="top" secondItem="yIy-fm-8Wc" secondAttribute="bottom" constant="372" id="Krg-9W-Wy7"/>
+                            <constraint firstItem="yIy-fm-8Wc" firstAttribute="top" secondItem="FRv-tG-HbD" secondAttribute="bottom" constant="44" id="eAV-dn-tce"/>
+                            <constraint firstItem="FRv-tG-HbD" firstAttribute="centerX" secondItem="yIy-fm-8Wc" secondAttribute="centerX" id="qbH-Cz-4EB"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="randomLabel" destination="yIy-fm-8Wc" id="nk6-fh-46V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hda-8q-FZ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
