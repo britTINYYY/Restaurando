@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		131BEC01C0336CCF3E2F8AF9 /* libPods-Restaurando.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D521A49F596AC2B0403556AD /* libPods-Restaurando.a */; };
 		3C1730451D33FF5B008256AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1730441D33FF5B008256AF /* AppDelegate.swift */; };
 		3C1730471D33FF5B008256AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1730461D33FF5B008256AF /* ViewController.swift */; };
 		3C17304A1D33FF5B008256AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C1730481D33FF5B008256AF /* Main.storyboard */; };
@@ -26,6 +27,10 @@
 		3C1730501D33FF5B008256AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CC3046F1D36E37A00001831 /* RandomType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RandomType.swift; path = "View Controllers/RandomType.swift"; sourceTree = "<group>"; };
 		3CC304731D36FF5C00001831 /* RandomSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomSelector.swift; sourceTree = "<group>"; };
+		3CE8A06F1D46BD2B00CBB524 /* Restaurando-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Restaurando-Bridging-Header.h"; sourceTree = "<group>"; };
+		5D562B3925D848EE66CFBE66 /* Pods-Restaurando.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restaurando.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Restaurando/Pods-Restaurando.debug.xcconfig"; sourceTree = "<group>"; };
+		D521A49F596AC2B0403556AD /* libPods-Restaurando.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Restaurando.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCD80009CDC4273F481C8F65 /* Pods-Restaurando.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restaurando.release.xcconfig"; path = "Pods/Target Support Files/Pods-Restaurando/Pods-Restaurando.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +38,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				131BEC01C0336CCF3E2F8AF9 /* libPods-Restaurando.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		047E5D9373FEE7447EE4BD1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D521A49F596AC2B0403556AD /* libPods-Restaurando.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1B9DFAAED2F8ECE2C5702114 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D562B3925D848EE66CFBE66 /* Pods-Restaurando.debug.xcconfig */,
+				FCD80009CDC4273F481C8F65 /* Pods-Restaurando.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3C1730381D33FF5B008256AF = {
 			isa = PBXGroup;
 			children = (
 				3C1730431D33FF5B008256AF /* Restaurando */,
 				3C1730421D33FF5B008256AF /* Products */,
+				1B9DFAAED2F8ECE2C5702114 /* Pods */,
+				047E5D9373FEE7447EE4BD1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +91,7 @@
 				3C17304B1D33FF5B008256AF /* Assets.xcassets */,
 				3C17304D1D33FF5B008256AF /* LaunchScreen.storyboard */,
 				3C1730501D33FF5B008256AF /* Info.plist */,
+				3CE8A06F1D46BD2B00CBB524 /* Restaurando-Bridging-Header.h */,
 			);
 			path = Restaurando;
 			sourceTree = "<group>";
@@ -85,9 +111,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C1730531D33FF5B008256AF /* Build configuration list for PBXNativeTarget "Restaurando" */;
 			buildPhases = (
+				241F6A01FFD4C91334B0E69D /* [CP] Check Pods Manifest.lock */,
 				3C17303D1D33FF5B008256AF /* Sources */,
 				3C17303E1D33FF5B008256AF /* Frameworks */,
 				3C17303F1D33FF5B008256AF /* Resources */,
+				86D1AE66EC73D389A012D3AC /* [CP] Embed Pods Frameworks */,
+				1750114039B26C074B62F01B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +172,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1750114039B26C074B62F01B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Restaurando/Pods-Restaurando-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		241F6A01FFD4C91334B0E69D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		86D1AE66EC73D389A012D3AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Restaurando/Pods-Restaurando-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3C17303D1D33FF5B008256AF /* Sources */ = {
@@ -263,23 +340,27 @@
 		};
 		3C1730541D33FF5B008256AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D562B3925D848EE66CFBE66 /* Pods-Restaurando.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Restaurando/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Restaurando;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Restaurando/Restaurando-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		3C1730551D33FF5B008256AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCD80009CDC4273F481C8F65 /* Pods-Restaurando.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Restaurando/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Restaurando;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Restaurando/Restaurando-Bridging-Header.h";
 			};
 			name = Release;
 		};
