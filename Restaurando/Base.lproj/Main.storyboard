@@ -11,7 +11,7 @@
         <!--Welcome Screen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Welcome Screen" id="BYZ-38-t0r" customClass="ViewController" customModule="Restaurando" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Welcome Screen" id="BYZ-38-t0r" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -48,7 +48,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Help!!"/>
                                 <connections>
-                                    <segue destination="Vu6-Va-iFu" kind="show" id="K7E-YM-PJD"/>
+                                    <segue destination="Vu6-Va-iFu" kind="show" identifier="" id="K7E-YM-PJD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -98,10 +98,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w31-RE-CDD">
-                                <rect key="frame" x="258" y="506" width="85" height="30"/>
+                                <rect key="frame" x="258" y="521" width="85" height="30"/>
                                 <state key="normal" title="Continue =&gt;"/>
                                 <connections>
-                                    <segue destination="Yuz-kz-vDS" kind="show" id="g9y-b6-vJa"/>
+                                    <segue destination="Yuz-kz-vDS" kind="show" identifier="displayRandom" id="g9y-b6-vJa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -110,7 +110,7 @@
                             <constraint firstItem="yIy-fm-8Wc" firstAttribute="top" secondItem="7tb-fL-4ID" secondAttribute="bottom" constant="185" id="0ds-7C-1ZP"/>
                             <constraint firstItem="yIy-fm-8Wc" firstAttribute="centerX" secondItem="sCT-Ov-Nyz" secondAttribute="centerX" id="242-tQ-Y0p"/>
                             <constraint firstItem="vS2-YG-2Vl" firstAttribute="top" secondItem="yIy-fm-8Wc" secondAttribute="bottom" constant="372" id="Krg-9W-Wy7"/>
-                            <constraint firstItem="vS2-YG-2Vl" firstAttribute="top" secondItem="w31-RE-CDD" secondAttribute="bottom" constant="64" id="Ncu-8k-cfF"/>
+                            <constraint firstItem="vS2-YG-2Vl" firstAttribute="top" secondItem="w31-RE-CDD" secondAttribute="bottom" constant="49" id="Ncu-8k-cfF"/>
                             <constraint firstItem="yIy-fm-8Wc" firstAttribute="top" secondItem="FRv-tG-HbD" secondAttribute="bottom" constant="44" id="eAV-dn-tce"/>
                             <constraint firstItem="FRv-tG-HbD" firstAttribute="centerX" secondItem="yIy-fm-8Wc" secondAttribute="centerX" id="qbH-Cz-4EB"/>
                             <constraint firstItem="w31-RE-CDD" firstAttribute="centerX" secondItem="yIy-fm-8Wc" secondAttribute="centerX" id="zIi-ag-fck"/>

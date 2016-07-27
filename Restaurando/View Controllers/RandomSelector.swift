@@ -15,6 +15,15 @@ class RandomSelector: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let randomRestaurant = RestaurantTypes(type: "Title is Me!!")
-        randomLabel.text = randomRestaurant.getTypeRest() + "!"
+        randomLabel.text = randomRestaurant.getTypeRest()
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let identifier = segue.identifier {
+            if identifier == "displayRandom" {
+                let vc = segue.destinationViewController as! ViewController
+                vc.term = randomLabel.text!
+            }
+        }
     }
 }
