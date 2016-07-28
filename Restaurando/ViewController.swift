@@ -12,7 +12,6 @@ class ViewController: UIViewController {
 
     var searchTerm = ""
     
-    @IBOutlet weak var resultsLabel: UILabel!
   //  var searchTerm: RandomSelector
     
     override func viewDidLoad() {
@@ -48,10 +47,10 @@ class ViewController: UIViewController {
             }
             
             let businesses = search.businesses
-            print("total: \(search.total) number of biz: \(search.businesses.count)")
+            let busName = YLPBusiness()
             
-            for business in businesses {
-                print("\(business.name)")
+            for _ in businesses {
+                resultsLabel.text = ("\(busName.name)")
             }
 
         }
@@ -60,18 +59,6 @@ class ViewController: UIViewController {
         dispatch_group_wait(group, DISPATCH_TIME_FOREVER)
 
     }
-    
-    
-    
-    
-
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    
 
 }
 

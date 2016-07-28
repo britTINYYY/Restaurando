@@ -21,8 +21,8 @@ class RandomSelector: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let identifier = segue.identifier {
             if identifier == "displayRandom" {
-                let vc = segue.destinationViewController as! ViewController
-                vc.term = randomLabel.text!
+                let searchFor = segue.destinationViewController as! ViewController
+                searchFor.searchTerm = randomLabel.text!
             }
         }
     }

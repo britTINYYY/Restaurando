@@ -98,10 +98,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w31-RE-CDD">
-                                <rect key="frame" x="258" y="521" width="85" height="30"/>
-                                <state key="normal" title="Continue =&gt;"/>
+                                <rect key="frame" x="256" y="462" width="90" height="30"/>
+                                <state key="normal" title="Continue! =&gt;"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2n-gM-AB5">
+                                <rect key="frame" x="187" y="522" width="226" height="30"/>
+                                <state key="normal" title="Actually I don't want to eat that..."/>
                                 <connections>
-                                    <segue destination="Yuz-kz-vDS" kind="show" identifier="displayRandom" id="g9y-b6-vJa"/>
+                                    <segue destination="Vu6-Va-iFu" kind="show" id="jYk-Xp-pRx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -109,11 +113,13 @@
                         <constraints>
                             <constraint firstItem="yIy-fm-8Wc" firstAttribute="top" secondItem="7tb-fL-4ID" secondAttribute="bottom" constant="185" id="0ds-7C-1ZP"/>
                             <constraint firstItem="yIy-fm-8Wc" firstAttribute="centerX" secondItem="sCT-Ov-Nyz" secondAttribute="centerX" id="242-tQ-Y0p"/>
+                            <constraint firstItem="vS2-YG-2Vl" firstAttribute="top" secondItem="R2n-gM-AB5" secondAttribute="bottom" constant="48" id="3ri-Nl-TQQ"/>
                             <constraint firstItem="vS2-YG-2Vl" firstAttribute="top" secondItem="yIy-fm-8Wc" secondAttribute="bottom" constant="372" id="Krg-9W-Wy7"/>
-                            <constraint firstItem="vS2-YG-2Vl" firstAttribute="top" secondItem="w31-RE-CDD" secondAttribute="bottom" constant="49" id="Ncu-8k-cfF"/>
+                            <constraint firstItem="vS2-YG-2Vl" firstAttribute="top" secondItem="w31-RE-CDD" secondAttribute="bottom" constant="108" id="Ncu-8k-cfF"/>
                             <constraint firstItem="yIy-fm-8Wc" firstAttribute="top" secondItem="FRv-tG-HbD" secondAttribute="bottom" constant="44" id="eAV-dn-tce"/>
                             <constraint firstItem="FRv-tG-HbD" firstAttribute="centerX" secondItem="yIy-fm-8Wc" secondAttribute="centerX" id="qbH-Cz-4EB"/>
-                            <constraint firstItem="w31-RE-CDD" firstAttribute="centerX" secondItem="yIy-fm-8Wc" secondAttribute="centerX" id="zIi-ag-fck"/>
+                            <constraint firstItem="R2n-gM-AB5" firstAttribute="centerX" secondItem="w31-RE-CDD" secondAttribute="centerX" constant="-1" id="uoa-hA-wnq"/>
+                            <constraint firstItem="w31-RE-CDD" firstAttribute="centerX" secondItem="yIy-fm-8Wc" secondAttribute="centerX" constant="1" id="zIi-ag-fck"/>
                         </constraints>
                     </view>
                     <connections>
@@ -124,49 +130,8 @@
             </objects>
             <point key="canvasLocation" x="1559" y="248"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="tVj-id-mNz">
-            <objects>
-                <viewController id="Yuz-kz-vDS" customClass="ViewController" customModule="Restaurando" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gFR-LH-JgI"/>
-                        <viewControllerLayoutGuide type="bottom" id="OHj-x5-lkJ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bMh-bh-Kqe">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here are 5 places we recommend!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPu-VW-7jm">
-                                <rect key="frame" x="169" y="60" width="262" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ResultsLabel" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7RM-eW-X44" userLabel="5 results">
-                                <rect key="frame" x="248" y="289" width="104" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="104" id="6RA-ad-apX"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="PPu-VW-7jm" firstAttribute="centerX" secondItem="bMh-bh-Kqe" secondAttribute="centerX" id="2Wc-Yu-FDe"/>
-                            <constraint firstItem="7RM-eW-X44" firstAttribute="centerY" secondItem="bMh-bh-Kqe" secondAttribute="centerY" id="Jgw-5y-ElZ"/>
-                            <constraint firstItem="7RM-eW-X44" firstAttribute="centerX" secondItem="PPu-VW-7jm" secondAttribute="centerX" id="R8T-UB-Yjl"/>
-                            <constraint firstItem="PPu-VW-7jm" firstAttribute="top" secondItem="gFR-LH-JgI" secondAttribute="bottom" constant="40" id="okx-LS-72q"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="resultsLabel" destination="7RM-eW-X44" id="iHY-hQ-90k"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QFx-fJ-7xf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2216" y="248"/>
-        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="K7E-YM-PJD"/>
+    </inferredMetricsTieBreakers>
 </document>
