@@ -47,11 +47,11 @@ class ViewController: UIViewController {
             }
             
             let businesses = search.businesses
-            let busName = YLPBusiness()
-            
-            for _ in businesses {
-                resultsLabel.text = ("\(busName.name)")
-            }
+//            let busName = YLPBusiness()
+//            
+//            for _ in businesses {
+//          //      resultsLabel.text = ("\(busName.name)")
+//            }
 
         }
         
