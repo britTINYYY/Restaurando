@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     var searchTerm = ""
     
-    @IBOutlet weak var resultsLabel: UILabel!
+    @IBOutlet weak var resultsTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,19 +47,19 @@ class ViewController: UIViewController {
             }
             
             let businesses = search.businesses
-            let busName = YLPBusiness()
-            
             for business in businesses {
-                print("\(business.name)")
-                self.resultsLabel.text = ("\(busName.name)")
+                self.resultsTextView.text = (business.name) + "\r\n"
+                
+//                let busName = YLPBusiness()
+//                self.resultsTextView.text = busName.name
             }
-
+            
         }
         
         // Wait for the search to complete
         dispatch_group_wait(group, DISPATCH_TIME_FOREVER)
 
     }
-
+    
 }
 

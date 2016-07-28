@@ -101,7 +101,7 @@
                                 <rect key="frame" x="256" y="462" width="90" height="30"/>
                                 <state key="normal" title="Continue! =&gt;"/>
                                 <connections>
-                                    <segue destination="cVL-hr-6WL" kind="show" id="GAs-QT-hLq"/>
+                                    <segue destination="cVL-hr-6WL" kind="show" identifier="displayRandom" id="GAs-QT-hLq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2n-gM-AB5">
@@ -151,12 +151,12 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="resultsLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGg-Kd-4av">
-                                <rect key="frame" x="253" y="260" width="95" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eDO-6D-pZm" userLabel="Results Text View">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -165,7 +165,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="resultsLabel" destination="TGg-Kd-4av" id="DQU-g4-ueQ"/>
+                        <outlet property="resultsTextView" destination="eDO-6D-pZm" id="kSH-LV-Tm8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pXv-GI-T5T" userLabel="First Responder" sceneMemberID="firstResponder"/>
