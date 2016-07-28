@@ -17,7 +17,7 @@ class RestaurantTypes {
     }
 
     //array of Restaurant types
-    static var typeArray = [RestaurantTypes(type: "American"), RestaurantTypes(type: "Italian"),    RestaurantTypes(type: "Barbeque"), RestaurantTypes(type: "Chinese"), RestaurantTypes(type: "Korean"), RestaurantTypes(type: "Mexican"), RestaurantTypes(type: "Mediterranean"), RestaurantTypes(type: "Tex-Mex"), RestaurantTypes(type: "Brazilian"), RestaurantTypes(type: "Japanese"), RestaurantTypes(type: "Seafood"), RestaurantTypes(type: "Steakhouse"), RestaurantTypes(type: "Pizzeria"), RestaurantTypes(type: "Buffet"), RestaurantTypes(type: "Cajun"), RestaurantTypes(type: "Greek"), RestaurantTypes(type: "Indian"), RestaurantTypes(type: "Halal"), RestaurantTypes(type: "Middle Eastern"), RestaurantTypes(type: "Vietnamese"), RestaurantTypes(type: "Thai")]
+    static var typeArray = [RestaurantTypes(type: "American"), RestaurantTypes(type: "Italian"),    RestaurantTypes(type: "Barbeque"), RestaurantTypes(type: "Chinese"), RestaurantTypes(type: "Korean"), RestaurantTypes(type: "Mexican"), RestaurantTypes(type: "Mediterranean"), RestaurantTypes(type: "Tex-Mex"), RestaurantTypes(type: "Japanese"), RestaurantTypes(type: "Seafood"), RestaurantTypes(type: "Steakhouse"), RestaurantTypes(type: "Pizzeria"), RestaurantTypes(type: "Buffet"), RestaurantTypes(type: "Cajun"), RestaurantTypes(type: "Greek"), RestaurantTypes(type: "Indian"), RestaurantTypes(type: "Halal"), RestaurantTypes(type: "Middle Eastern"), RestaurantTypes(type: "Vietnamese"), RestaurantTypes(type: "Thai")]
     
     //returns a random type of restaurant/food
     func getTypeRest() -> String {
