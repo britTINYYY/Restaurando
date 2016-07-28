@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     var searchTerm = ""
     
-  //  var searchTerm: RandomSelector
+    @IBOutlet weak var resultsLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,11 +47,12 @@ class ViewController: UIViewController {
             }
             
             let businesses = search.businesses
-//            let busName = YLPBusiness()
-//            
-//            for _ in businesses {
-//          //      resultsLabel.text = ("\(busName.name)")
-//            }
+            let busName = YLPBusiness()
+            
+            for business in businesses {
+                print("\(business.name)")
+                self.resultsLabel.text = ("\(busName.name)")
+            }
 
         }
         
