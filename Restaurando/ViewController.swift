@@ -48,10 +48,11 @@ class ViewController: UIViewController {
             }
             
             let businesses = search.businesses
-            print("total: \(search.total) number of biz: \(search.businesses.count)")
+            let busName = YLPBusiness()
             
             for business in businesses {
                 print("\(business.name)")
+                self.resultsLabel.text = ("\(busName.name)")
             }
 
         }
