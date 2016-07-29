@@ -15,6 +15,7 @@
 		3C17304F1D33FF5B008256AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C17304D1D33FF5B008256AF /* LaunchScreen.storyboard */; };
 		3CC304701D36E37A00001831 /* RestaurantTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC3046F1D36E37A00001831 /* RestaurantTypes.swift */; };
 		3CC304741D36FF5C00001831 /* RandomSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC304731D36FF5C00001831 /* RandomSelector.swift */; };
+		3CF9780F1D4BFFD60077244B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF9780E1D4BFFD60077244B /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3CC3046F1D36E37A00001831 /* RestaurantTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestaurantTypes.swift; path = "View Controllers/RestaurantTypes.swift"; sourceTree = "<group>"; };
 		3CC304731D36FF5C00001831 /* RandomSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomSelector.swift; sourceTree = "<group>"; };
 		3CE8A06F1D46BD2B00CBB524 /* Restaurando-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Restaurando-Bridging-Header.h"; sourceTree = "<group>"; };
+		3CF9780E1D4BFFD60077244B /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		5D562B3925D848EE66CFBE66 /* Pods-Restaurando.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restaurando.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Restaurando/Pods-Restaurando.debug.xcconfig"; sourceTree = "<group>"; };
 		D521A49F596AC2B0403556AD /* libPods-Restaurando.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Restaurando.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD80009CDC4273F481C8F65 /* Pods-Restaurando.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restaurando.release.xcconfig"; path = "Pods/Target Support Files/Pods-Restaurando/Pods-Restaurando.release.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				3CC304731D36FF5C00001831 /* RandomSelector.swift */,
+				3CF9780E1D4BFFD60077244B /* WelcomeViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C1730471D33FF5B008256AF /* ViewController.swift in Sources */,
+				3CF9780F1D4BFFD60077244B /* WelcomeViewController.swift in Sources */,
 				3CC304741D36FF5C00001831 /* RandomSelector.swift in Sources */,
 				3CC304701D36E37A00001831 /* RestaurantTypes.swift in Sources */,
 				3C1730451D33FF5B008256AF /* AppDelegate.swift in Sources */,
