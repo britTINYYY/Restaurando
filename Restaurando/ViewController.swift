@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     var searchTerm = ""
     
     @IBOutlet weak var resultsTextView: UITextView!
@@ -23,10 +23,7 @@ class ViewController: UIViewController {
                                consumerSecret: "Vn8UMrw1TWWKfZyQXYAc6JX8rF4",
                                token: "8i2e6oy5rnWhmfuovXsGHzR7GxBSrcO4",
                                tokenSecret: "H50brSTiENoDplboaAgNfOvpmoM")
-        
-        // Create a dispatch group to wait for search results
-        let group = dispatch_group_create()
-        dispatch_group_enter(group)
+
         
         client.searchWithLocation("San Francisco, CA",
                                   currentLatLong: nil,
@@ -35,11 +32,7 @@ class ViewController: UIViewController {
                                   offset: 0,
                                   sort: .HighestRated)
         { (search: YLPSearch?, error: NSError?) in
-            // When leaving this completion handler, notify that the search finished
-            defer {
-                dispatch_group_leave(group)
-            }
-            
+                    
             // Check if we received a result; if not, there was an error
             guard let search = search else {
                 print("Search errored: \(error)")
@@ -47,18 +40,18 @@ class ViewController: UIViewController {
             }
             
             let businesses = search.businesses
+            var listOfBusinesses = ""
             for business in businesses {
-                self.resultsTextView.text = (business.name) + "\r\n"
                 
-//                let busName = YLPBusiness()
-//                self.resultsTextView.text = busName.name
-            }
+                listOfBusinesses += (business.name) + "\r\n"
+                
+                }
             
+            dispatch_async(dispatch_get_main_queue(), {
+                self.resultsTextView.text = listOfBusinesses
+            })
         }
         
-        // Wait for the search to complete
-        dispatch_group_wait(group, DISPATCH_TIME_FOREVER)
-
     }
     
 }

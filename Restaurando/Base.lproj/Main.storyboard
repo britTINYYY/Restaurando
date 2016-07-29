@@ -3,8 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -21,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't know what to eat? We got you!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzp-sP-RTd">
-                                <rect key="frame" x="51" y="347" width="500" height="120"/>
+                                <rect key="frame" x="51" y="347" width="518" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="LEs-C6-YMy"/>
                                 </constraints>
@@ -30,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurando" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Jq-yx-EP9">
-                                <rect key="frame" x="153" y="117" width="297" height="129"/>
+                                <rect key="frame" x="151.5" y="117" width="297" height="129"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="129" id="QjM-qs-IBW"/>
                                     <constraint firstAttribute="width" constant="297" id="hiV-ZO-msK"/>
@@ -40,7 +38,7 @@
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHt-3k-ViK">
-                                <rect key="frame" x="266" y="439" width="69" height="34"/>
+                                <rect key="frame" x="266" y="436" width="69" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="69" id="06C-hT-oot"/>
                                     <constraint firstAttribute="height" constant="37" id="4RY-WF-0Ma"/>
@@ -54,12 +52,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.52523939726986324" blue="0.85437450672180848" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="hzp-sP-RTd" firstAttribute="centerX" secondItem="IHt-3k-ViK" secondAttribute="centerX" id="5Tt-Cq-tLa"/>
-                            <constraint firstItem="hzp-sP-RTd" firstAttribute="baseline" secondItem="IHt-3k-ViK" secondAttribute="baseline" id="JsU-Ta-s7Q"/>
-                            <constraint firstItem="3Jq-yx-EP9" firstAttribute="centerX" secondItem="hzp-sP-RTd" secondAttribute="centerX" id="Vi2-Qj-oyE"/>
+                            <constraint firstItem="3Jq-yx-EP9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hug-mq-2cf"/>
+                            <constraint firstAttribute="trailing" secondItem="hzp-sP-RTd" secondAttribute="trailing" constant="31" id="Vyg-lu-4gU"/>
                             <constraint firstItem="IHt-3k-ViK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fqh-qY-pfD"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IHt-3k-ViK" secondAttribute="bottom" constant="127" id="kFH-cO-z0a"/>
-                            <constraint firstItem="hzp-sP-RTd" firstAttribute="baseline" secondItem="IHt-3k-ViK" secondAttribute="firstBaseline" id="kgR-B0-0J4"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hzp-sP-RTd" secondAttribute="bottom" constant="133" id="ojY-El-uBH"/>
                             <constraint firstItem="3Jq-yx-EP9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="97" id="qB2-31-YlT"/>
                             <constraint firstItem="hzp-sP-RTd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="31" id="ugw-27-upe"/>
@@ -151,9 +147,12 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eDO-6D-pZm" userLabel="Results Text View">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eDO-6D-pZm" userLabel="Results Text View">
                                 <rect key="frame" x="180" y="236" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="92I-Cf-WfJ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -161,6 +160,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="0v9-kc-Qo3" firstAttribute="top" secondItem="pKV-uF-1yX" secondAttribute="bottom" constant="54" id="4O7-Mi-ErP"/>
+                            <constraint firstItem="fxa-38-EYw" firstAttribute="top" secondItem="eDO-6D-pZm" secondAttribute="bottom" constant="236" id="Ag8-Uw-aBG"/>
+                            <constraint firstItem="eDO-6D-pZm" firstAttribute="centerY" secondItem="FKc-cm-tRq" secondAttribute="centerY" id="Dcj-6e-Lq7"/>
+                            <constraint firstItem="eDO-6D-pZm" firstAttribute="centerX" secondItem="0v9-kc-Qo3" secondAttribute="centerX" id="KZ7-yH-IhK"/>
                             <constraint firstItem="0v9-kc-Qo3" firstAttribute="centerX" secondItem="FKc-cm-tRq" secondAttribute="centerX" id="dCb-E6-g4p"/>
                         </constraints>
                     </view>
