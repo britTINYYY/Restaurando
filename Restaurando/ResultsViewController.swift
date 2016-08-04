@@ -15,11 +15,12 @@ class ResultsViewController: UIViewController {
     
     
     @IBOutlet weak var resultsLabel: UILabel!
+    @IBOutlet weak var chooseAgainButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        chooseAgainButton.layer.cornerRadius = 10
         //Authenticate API Keys
         let client = YLPClient(consumerKey: "hC6Q3AMvXrmnaithktTNcg",
                                consumerSecret: "Vn8UMrw1TWWKfZyQXYAc6JX8rF4",

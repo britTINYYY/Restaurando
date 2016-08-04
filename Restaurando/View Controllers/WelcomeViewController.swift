@@ -10,8 +10,12 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
+    @IBOutlet weak var goButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        goButton.layer.cornerRadius = 10
 
         // Do any additional setup after loading the view.
     }

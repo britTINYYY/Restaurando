@@ -13,10 +13,13 @@ class LocationViewController: UIViewController {
     
     @IBOutlet weak var cityTextField: UITextField!
     @IBOutlet weak var stateTextField: UITextField!
+    @IBOutlet weak var continueOnButton: UIButton!
+    
     var setLocSearchTerm = ""
     override func viewDidLoad() {
         super.viewDidLoad()
             self.hideKeyboardWhenTappedAround()
+        continueOnButton.layer.cornerRadius = 10
         }
         // Do any additional setup after loading the view.
 

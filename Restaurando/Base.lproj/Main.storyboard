@@ -65,6 +65,9 @@
                             <constraint firstItem="hzp-sP-RTd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="31" id="ugw-27-upe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="goButton" destination="IHt-3k-ViK" id="dMb-6g-Qqo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -128,6 +131,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="changeMyMindButton" destination="R2n-gM-AB5" id="Uaq-Wj-yNk"/>
+                        <outlet property="continueButton" destination="w31-RE-CDD" id="Sp7-rt-Eiu"/>
                         <outlet property="randomLabel" destination="yIy-fm-8Wc" id="nk6-fh-46V"/>
                     </connections>
                 </viewController>
@@ -211,6 +216,7 @@
                     </view>
                     <connections>
                         <outlet property="cityTextField" destination="vNl-NB-0eT" id="oQv-Zr-kZO"/>
+                        <outlet property="continueOnButton" destination="0Sa-Zj-jMa" id="jYc-9f-Bxy"/>
                         <outlet property="stateTextField" destination="n73-NE-Vu6" id="SpD-r5-46F"/>
                     </connections>
                 </viewController>
@@ -251,8 +257,8 @@
                                     <segue destination="iKU-KE-60S" kind="unwind" unwindAction="unwindToWelcomeViewController:" id="u0s-DF-JkH"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ResultsLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukg-ax-5T8" userLabel="Results Label">
-                                <rect key="frame" x="20" y="201" width="560" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukg-ax-5T8" userLabel="Results Label">
+                                <rect key="frame" x="20" y="201" width="560" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -272,6 +278,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="chooseAgainButton" destination="GNi-CD-MGf" id="bWl-SY-VEK"/>
                         <outlet property="resultsLabel" destination="ukg-ax-5T8" id="ZWQ-CT-YKy"/>
                     </connections>
                 </viewController>

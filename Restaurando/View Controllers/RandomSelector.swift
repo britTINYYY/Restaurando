@@ -11,9 +11,15 @@ import UIKit
 class RandomSelector: UIViewController {
  
     @IBOutlet weak var randomLabel: UILabel!
+    @IBOutlet weak var continueButton: UIButton!
+    @IBOutlet weak var changeMyMindButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        continueButton.layer.cornerRadius = 10
+        changeMyMindButton.layer.cornerRadius = 10
+        
         let randomRestaurant = RestaurantTypes(type: "Title is Me!!")
         randomLabel.text = randomRestaurant.getTypeRest()
     }
