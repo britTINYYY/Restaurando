@@ -8,11 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ResultsViewController: UIViewController {
     
     var searchTerm = ""
+    var userLoc = ""
     
-    @IBOutlet weak var resultsTextView: UITextView!
+    
+    @IBOutlet weak var resultsLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +27,7 @@ class ViewController: UIViewController {
                                tokenSecret: "H50brSTiENoDplboaAgNfOvpmoM")
 
         
-        client.searchWithLocation("San Francisco, CA",
+        client.searchWithLocation(userLoc,
                                   currentLatLong: nil,
                                   term: searchTerm,
                                   limit: 5,
@@ -48,7 +50,7 @@ class ViewController: UIViewController {
                 }
             
             dispatch_async(dispatch_get_main_queue(), {
-                self.resultsTextView.text = listOfBusinesses
+                self.resultsLabel.text = listOfBusinesses
             })
         }
         
