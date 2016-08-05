@@ -8,12 +8,16 @@
 
 import UIKit
 
-class RandomSelector: UIViewController {
+class RandomSelector: UIViewController{
  
     @IBOutlet weak var randomLabel: UILabel!
     @IBOutlet weak var continueButton: UIButton!
     @IBOutlet weak var changeMyMindButton: UIButton!
     
+    @IBAction func newOption(sender: UIButton) {
+        let randomFood = RestaurantTypes(type: "")
+        randomLabel.text = randomFood.getTypeRest()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,6 +26,7 @@ class RandomSelector: UIViewController {
         
         let randomRestaurant = RestaurantTypes(type: "Title is Me!!")
         randomLabel.text = randomRestaurant.getTypeRest()
+        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
