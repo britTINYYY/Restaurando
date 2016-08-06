@@ -25,7 +25,7 @@
                                     <constraint firstAttribute="width" constant="297" id="hiV-ZO-msK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.90980392156862744" green="0.27450980392156865" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
@@ -50,11 +50,11 @@
                                     <constraint firstAttribute="height" constant="120" id="LEs-C6-YMy"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="24"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="0.52941176470588236" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.83921568627450982" green="0.792156862745098" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.48627450980392156" green="0.87450980392156863" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="3Jq-yx-EP9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hug-mq-2cf"/>
                             <constraint firstAttribute="trailing" secondItem="hzp-sP-RTd" secondAttribute="trailing" constant="31" id="Vyg-lu-4gU"/>
@@ -91,34 +91,38 @@
                                     <constraint firstAttribute="width" constant="200" id="8Ml-tL-9fR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.90980392156862744" green="0.27450980392156865" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w31-RE-CDD">
                                 <rect key="frame" x="252" y="462" width="98" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.80252815218870155" blue="0.71988684389991975" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.52941176470588236" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title=" Continue! =&gt; "/>
+                                <state key="normal" title=" Continue! =&gt; ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <segue destination="YQu-j4-4Vv" kind="show" identifier="displayRandom" id="V02-Jx-d0a"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2n-gM-AB5">
                                 <rect key="frame" x="183" y="522" width="234" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.80252815218870155" blue="0.71988684389991975" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title=" Actually I don't want to eat that... "/>
+                                <color key="backgroundColor" red="1" green="0.52941176470588236" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title=" Actually I don't want to eat that... ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="newOption:" destination="Vu6-Va-iFu" eventType="touchUpInside" id="xL6-2T-UgX"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today you are going to eat..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRv-tG-HbD">
-                                <rect key="frame" x="192" y="50" width="217" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="187.5" y="50" width="226" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.96862745098039216" green="0.45490196078431372" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.83921568627450982" green="0.792156862745098" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.48627450980392156" green="0.87450980392156863" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="yIy-fm-8Wc" firstAttribute="centerX" secondItem="sCT-Ov-Nyz" secondAttribute="centerX" id="242-tQ-Y0p"/>
                             <constraint firstItem="vS2-YG-2Vl" firstAttribute="top" secondItem="R2n-gM-AB5" secondAttribute="bottom" constant="48" id="3ri-Nl-TQQ"/>
@@ -196,22 +200,26 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Sa-Zj-jMa">
                                 <rect key="frame" x="25" y="520" width="550" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.80252815218870155" blue="0.71988684389991975" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Continue =&gt;"/>
+                                <color key="backgroundColor" red="1" green="0.52941176470588236" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Continue =&gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <segue destination="cVL-hr-6WL" kind="show" identifier="setLocation" id="vdI-9L-lRh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Nu-Mo-MkF">
-                                <rect key="frame" x="20" y="33" width="178" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.80252815218870155" blue="0.71988684389991975" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title=" Changed my mind! "/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Nu-Mo-MkF">
+                                <rect key="frame" x="20" y="33" width="137" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.52941176470588236" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title=" Changed my mind! ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <segue destination="Vu6-Va-iFu" kind="show" id="Wpb-rS-YqS"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.83921568627450982" green="0.792156862745098" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.48627450980392156" green="0.87450980392156863" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="gWZ-dD-UU7" firstAttribute="top" secondItem="0Sa-Zj-jMa" secondAttribute="bottom" constant="50" id="CsB-HV-NDo"/>
                             <constraint firstItem="4Nu-Mo-MkF" firstAttribute="leading" secondItem="X7q-Pf-0OT" secondAttribute="leading" id="L3T-wL-Hek"/>
@@ -253,29 +261,31 @@
                                     <constraint firstAttribute="height" constant="72" id="u68-7j-AA4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.96862745098039216" green="0.45490196078431372" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNi-CD-MGf">
                                 <rect key="frame" x="237" y="500" width="126" height="39"/>
-                                <color key="backgroundColor" red="1" green="0.80252815218870155" blue="0.71988684389991975" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.52941176470588236" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="3QE-oM-3gI"/>
                                     <constraint firstAttribute="width" constant="126" id="mud-g2-Vhc"/>
                                 </constraints>
-                                <state key="normal" title="Choose again!"/>
+                                <state key="normal" title="Choose again!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <segue destination="iKU-KE-60S" kind="unwind" unwindAction="unwindToWelcomeViewController:" id="u0s-DF-JkH"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukg-ax-5T8" userLabel="Results Label">
                                 <rect key="frame" x="20" y="201" width="560" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" red="0.90980392156862744" green="0.27450980392156865" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.83921568627450982" green="0.792156862745098" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.48627450980392156" green="0.87450980392156863" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="ukg-ax-5T8" firstAttribute="leading" secondItem="FKc-cm-tRq" secondAttribute="leading" constant="20" id="1Td-wF-Xr7"/>
                             <constraint firstItem="ukg-ax-5T8" firstAttribute="top" secondItem="FKc-cm-tRq" secondAttribute="top" constant="201" id="CyG-jG-dc1"/>
@@ -300,6 +310,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Wpb-rS-YqS"/>
+        <segue reference="K7E-YM-PJD"/>
     </inferredMetricsTieBreakers>
 </document>
