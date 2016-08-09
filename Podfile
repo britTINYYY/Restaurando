@@ -7,4 +7,7 @@ target 'Restaurando' do
 
   # Pods for Restaurando
   pod 'YelpAPI', '~> 1.0.3'
+  pod 'Fabric'
+  pod 'Crashlytics'
+  
 end

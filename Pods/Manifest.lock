@@ -1,4 +1,7 @@
 PODS:
+  - Crashlytics (3.7.2):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.7)
   - OMGHTTPURLRQ/UserAgent (3.1.2)
   - TDOAuth (1.1.2):
     - OMGHTTPURLRQ/UserAgent
@@ -6,13 +9,17 @@ PODS:
     - TDOAuth (~> 1.1)
 
 DEPENDENCIES:
+  - Crashlytics
+  - Fabric
   - YelpAPI (~> 1.0.3)
 
 SPEC CHECKSUMS:
+  Crashlytics: 130ab943f8c78cda7a814b434f270b2e2c8a3cba
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   OMGHTTPURLRQ: 38316b56d88125c600bcdb16df8329147da2b0ee
   TDOAuth: f7e356e834295b83c7b5066ee72a30f128c5f722
   YelpAPI: 4104b480da9cad56adfc1d26b5f9c42cac64ff01
 
-PODFILE CHECKSUM: 69dfba70d99c520e8135e87ed9783f00da0450af
+PODFILE CHECKSUM: 3a5e966cf8df5a0a91611d55f5e6bd6968f81b44
 
 COCOAPODS: 1.0.1
