@@ -306,7 +306,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pXv-GI-T5T" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="iKU-KE-60S" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2837" y="248"/>
+            <point key="canvasLocation" x="2873" y="248"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

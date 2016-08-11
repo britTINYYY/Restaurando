@@ -13,6 +13,7 @@
 		3C17304A1D33FF5B008256AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C1730481D33FF5B008256AF /* Main.storyboard */; };
 		3C17304C1D33FF5B008256AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C17304B1D33FF5B008256AF /* Assets.xcassets */; };
 		3C17304F1D33FF5B008256AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C17304D1D33FF5B008256AF /* LaunchScreen.storyboard */; };
+		3C3E91771D5BDF7D00970F68 /* RandomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E91761D5BDF7D00970F68 /* RandomTableViewController.swift */; };
 		3CC304701D36E37A00001831 /* RestaurantTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC3046F1D36E37A00001831 /* RestaurantTypes.swift */; };
 		3CC304741D36FF5C00001831 /* RandomSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC304731D36FF5C00001831 /* RandomSelector.swift */; };
 		3CF9780F1D4BFFD60077244B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF9780E1D4BFFD60077244B /* WelcomeViewController.swift */; };
@@ -27,6 +28,7 @@
 		3C17304B1D33FF5B008256AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C17304E1D33FF5B008256AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C1730501D33FF5B008256AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C3E91761D5BDF7D00970F68 /* RandomTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomTableViewController.swift; sourceTree = "<group>"; };
 		3CC3046F1D36E37A00001831 /* RestaurantTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestaurantTypes.swift; path = "View Controllers/RestaurantTypes.swift"; sourceTree = "<group>"; };
 		3CC304731D36FF5C00001831 /* RandomSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomSelector.swift; sourceTree = "<group>"; };
 		3CE8A06F1D46BD2B00CBB524 /* Restaurando-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Restaurando-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				3CC304731D36FF5C00001831 /* RandomSelector.swift */,
 				3CF978101D4C06340077244B /* LocationViewController.swift */,
 				3C1730461D33FF5B008256AF /* ResultsViewController.swift */,
+				3C3E91761D5BDF7D00970F68 /* RandomTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				3C1730471D33FF5B008256AF /* ResultsViewController.swift in Sources */,
 				3CF9780F1D4BFFD60077244B /* WelcomeViewController.swift in Sources */,
 				3CC304741D36FF5C00001831 /* RandomSelector.swift in Sources */,
+				3C3E91771D5BDF7D00970F68 /* RandomTableViewController.swift in Sources */,
 				3CF978111D4C06340077244B /* LocationViewController.swift in Sources */,
 				3CC304701D36E37A00001831 /* RestaurantTypes.swift in Sources */,
 				3C1730451D33FF5B008256AF /* AppDelegate.swift in Sources */,
