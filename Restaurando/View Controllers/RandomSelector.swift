@@ -8,21 +8,32 @@
 
 import UIKit
 
-class RandomSelector: UIViewController {
+class RandomSelector: UIViewController{
  
     @IBOutlet weak var randomLabel: UILabel!
+    @IBOutlet weak var continueButton: UIButton!
+    @IBOutlet weak var changeMyMindButton: UIButton!
     
+    @IBAction func newOption(sender: UIButton) {
+        let randomFood = RestaurantTypes(type: "")
+        randomLabel.text = randomFood.getTypeRest()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        continueButton.layer.cornerRadius = 10
+        changeMyMindButton.layer.cornerRadius = 10
+        
         let randomRestaurant = RestaurantTypes(type: "Title is Me!!")
         randomLabel.text = randomRestaurant.getTypeRest()
+        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let identifier = segue.identifier {
             if identifier == "displayRandom" {
-                let search = segue.destinationViewController as! ViewController
-                search.searchTerm = randomLabel.text!
+                let searchFor = segue.destinationViewController as! LocationViewController
+                searchFor.setLocSearchTerm = randomLabel.text!
             }
         }
     }
